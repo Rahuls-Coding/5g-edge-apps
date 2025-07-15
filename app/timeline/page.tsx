@@ -45,7 +45,7 @@ const timelineData = [
   },
   {
     week: "Week 4",
-    title: "Pipeline and WEbsite",
+    title: "Pipeline and Website",
     description: "Built a pipeline to collect and store live metrics, designed a standardized LLM test, and launched a project website.",
     status: "completed",
     icon: BeakerIcon,
