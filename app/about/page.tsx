@@ -7,22 +7,9 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 const teamMembers = [
   {
-    name: "Rahul Rajkumar",
-    role: "Principal Investigator",
-    image: "/rahul.jpg",
-    description:
-      "Rising sophomore at Rutgers majoring in CS + Math. Interested in ML/AI research related to computer vision and time series. ",
-    expertise: ["Machine/Deep Learning", "Data Science",],
-    links: {
-      github: "https://github.com/alt-rahul",
-      linkedin: "https://linkedin.com/in/rahulrajkumar01",
-      email: "rahulrajkumar@rutgers.edu",
-    },
-  },
-  {
     name: "Andrew Michael",
     role: "Research Engineer",
-    image: "/placeholder.svg?height=300&width=300",
+    image: "/images/andrew.png",
     description:
       "Rising junior at Rutgers majoring in ECE. Intersted in cybersec and cloud.",
     expertise: ["Cloud Infra", "Edge Compute",],
@@ -33,9 +20,22 @@ const teamMembers = [
     },
   },
   {
+    name: "Rahul Rajkumar",
+    role: "Principal Investigator",
+    image: "/images/rahul.jpg",
+    description:
+      "Rising sophomore at Rutgers majoring in CS + Math. Interested in ML/AI research related to computer vision and time series. ",
+    expertise: ["Machine/Deep Learning", "Data Science",],
+    links: {
+      github: "https://github.com/alt-rahul",
+      linkedin: "https://linkedin.com/in/rahulrajkumar01",
+      email: "rahulrajkumar@rutgers.edu",
+    },
+  },
+  {
     name: "Xiaotian Zhou",
     role: "Data Analyst",
-    image: "/placeholder.svg?height=300&width=300",
+    image: "/images/jack.png",
     description:
       "First year PhD student at Rutgers. Very smart.",
     expertise: ["Home Labs", "Cloud/Edge/DevOps", ],
