@@ -107,21 +107,7 @@ export default function HomePage() {
                   <h3 className="text-xl font-medium text-black dark:text-white mb-3">Data Collection</h3>
                 </div>
                 <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                  Collect data on the compute metrics that are vital in running popular applications in Edge Platoforms. 
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-transparent border-none shadow-none transition-all duration-300">
-              <CardContent className="p-8">
-                <div className="mb-6">
-                  <div className="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center mb-4">
-                    <ServerIcon className="h-6 w-6 text-green-400" />
-                  </div>
-                  <h3 className="text-xl font-medium text-black dark:text-white mb-3">Meaningful Benchmarks</h3>
-                </div>
-                <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                  Intelligent calculation using GPU metrics to ouput a single value for testing the capability of the edge platform on using LLMs.
+                  Collect data on the gpu metrics that are vital in running LLM on Edge Platforms, specfically, metrics such as GPU utilization, VRAM utilization, etc. 
                 </p>
               </CardContent>
             </Card>
@@ -135,10 +121,26 @@ export default function HomePage() {
                   <h3 className="text-xl font-medium text-black dark:text-white mb-3">Resource Management</h3>
                 </div>
                 <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                  Efficient allocation algorithms for distributed edge computing systems.
+                  Accounts for multiple stages of the compute available, idle stage, overloading prompt requets, and even sending prompt requets while there may background processes running.
                 </p>
               </CardContent>
             </Card>
+
+            <Card className="bg-transparent border-none shadow-none transition-all duration-300">
+              <CardContent className="p-8">
+                <div className="mb-6">
+                  <div className="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center mb-4">
+                    <ServerIcon className="h-6 w-6 text-green-400" />
+                  </div>
+                  <h3 className="text-xl font-medium text-black dark:text-white mb-3">Meaningful Benchmarks</h3>
+                </div>
+                <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                  Intelligent calculation (weighted sum) using GPU metrics to ouput a single value for testing the capability of the edge platform on using LLMs.
+                </p>
+              </CardContent>
+            </Card>
+
+            
           </div>
         </div>
       </section>
@@ -147,7 +149,7 @@ export default function HomePage() {
       <section className="py-20 px-4 relative">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-4xl font-light mb-12">Project Resources</h2>
-          <div className="grid md:grid-cols-3 gap-4">
+          <div className="grid md:grid-cols-2 gap-4">
             <Card className="bg-transparent border-none hover:bg-gray-100 dark:hover:bg-gray-900/50 transition-all duration-300">
               <CardContent className="p-0">
                 <Link
@@ -181,26 +183,7 @@ export default function HomePage() {
             <Card className="bg-transparent border-none hover:bg-gray-100 dark:hover:bg-gray-900/50 transition-all duration-300">
               <CardContent className="p-0">
                 <Link
-                  href="/research"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-between p-6 group"
-                >
-                  <div className="flex items-center space-x-3">
-                    <div className="w-8 h-8 bg-gray-200 dark:bg-gray-800 rounded-lg flex items-center justify-center">
-                      <DocumentTextIcon className="w-4 h-4 text-black dark:text-white" />
-                    </div>
-                    <span className="text-black dark:text-white font-medium">Research Papers</span>
-                  </div>
-                  <ArrowRightIcon className="w-4 h-4 text-gray-400 group-hover:text-black dark:group-hover:text-white transition-colors transform rotate-45" />
-                </Link>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-transparent border-none hover:bg-gray-100 dark:hover:bg-gray-900/50 transition-all duration-300">
-              <CardContent className="p-0">
-                <Link
-                  href="https://github.com/alt-rahul/5g-edge-app/blob/main/guides/the-journey.md"
+                  href="https://github.com/alt-rahul/5g-edge-app/blob/main/guides/using-orbit.md"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-between p-6 group"
