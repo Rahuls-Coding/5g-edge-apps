@@ -133,7 +133,7 @@ export default function TimelinePage() {
                 asChild
                 className="border text-black mt-8 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-900 px-8 py-3 text-base"
               >
-                <Link target="_blank" href="https://gitlab.orbit-lab.org/rahulrajkumar/5g-edge-apps/-/tree/main/presentations?ref_type=heads">Click here for Presentions</Link>
+                <Link target="_blank" href="https://gitlab.orbit-lab.org/rahulrajkumar/5g-edge-apps/-/tree/main/presentations?ref_type=heads">Click here for Presentations</Link>
               </Button>
         </div>
       </section> 
