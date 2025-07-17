@@ -2,6 +2,10 @@ import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
+import Link from "next/link"
+
+
 import {
   MagnifyingGlassIcon,
   ServerIcon,
@@ -123,8 +127,16 @@ export default function TimelinePage() {
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
             10-week edge computing benchmarking research project milestones
           </p>
+          {/* <a className="mt-3 text-blue" href="https://gitlab.orbit-lab.org/rahulrajkumar/5g-edge-apps/-/tree/main/presentations?ref_type=heads"> Click here to access our presentations </a> */}
+         <Button
+                variant="outline"
+                asChild
+                className="border text-black mt-8 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-900 px-8 py-3 text-base"
+              >
+                <Link href="https://gitlab.orbit-lab.org/rahulrajkumar/5g-edge-apps/-/tree/main/presentations?ref_type=heads">Click here for Presentions</Link>
+              </Button>
         </div>
-      </section>
+      </section> 
 
       {/* Timeline */}
       <section className="py-12 px-4 relative">
